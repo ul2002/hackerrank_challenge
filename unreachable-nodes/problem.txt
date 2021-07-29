@@ -11,6 +11,10 @@ You need to print a single integer denoting the number of nodes that are unreach
 
 Constraints
 
+1 <= N <= 10⁵
+1 <= M <= 10⁵
+1 <= x <= N
+
 
 
 

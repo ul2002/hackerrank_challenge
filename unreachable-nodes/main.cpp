@@ -2,11 +2,13 @@
    #include <vector>
     using namespace std;
 
-    vector <int> adj[10];
-    bool visited[10];
+    vector <int> adj[100000];
+    bool visited[100000];
+    int ans = 0;
 
     void dfs(int s) {
         visited[s] = true;
+        ans++;
         for(int i = 0;i < adj[s].size();++i)    {
          if(visited[adj[s][i]] == false)
              dfs(adj[s][i]);
@@ -33,11 +35,7 @@
         initialize();                           //Initialize all nodes as not visited
         dfs(head);
 
-        for(int i = 1;i <= nodes;++i) {
-         if(visited[i] == false) {
-            unreachableNodes++;
-         }
-        }
-        cout << unreachableNodes << endl;
+        
+        cout << (nodes - ans);
         return 0;
     }
