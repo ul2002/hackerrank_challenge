@@ -11,24 +11,24 @@ class GraphNode
     @neighbors << neighbor
   end
   
-  end
+end
   
 class Graph
 
   attr_accessor :nodes
 
-def initialize
-    @nodes = []
-end
+  def initialize
+      @nodes = []
+  end
 
-def add_node(value)
-    graph_node = @nodes.find { |obj| obj.value == value } 
-    if !graph_node
-    graph_node = GraphNode.new(value)
-    @nodes << graph_node 
-    end
-    return graph_node
-end
+  def add_node(value)
+      graph_node = @nodes.find { |obj| obj.value == value } 
+      if !graph_node
+      graph_node = GraphNode.new(value)
+      @nodes << graph_node 
+      end
+      return graph_node
+  end
 
 end
 
@@ -72,4 +72,4 @@ $ans = 0;
  
 dfs(head.to_i)
 
-puts $ans
+puts nodes.to_i - $ans
