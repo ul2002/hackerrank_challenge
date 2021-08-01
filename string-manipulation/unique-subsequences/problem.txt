@@ -1,0 +1,14 @@
+Problem
+You are given a string  that contains  characters. Your task is to determine the maximum possible size of the subsequence  of  such that no two adjacent characters in  are the same.
+
+Note: The string contains only lowercase English alphabets.
+
+Input format
+
+First line: A single integer  denoting the number of test cases
+For each test case:
+First line: Single integer  denoting the size of the string
+Second line:  denoting the string
+Output format
+
+For each test case, print a single line containing one integer that represents the maximum size of the subsequence that satisfies the provided condition.
